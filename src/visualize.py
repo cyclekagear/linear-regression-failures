@@ -2,15 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def plot_data_with_line(x, y, y_pred, title=""):
-    """
-    Plots a scatter plot of data points and a regression line.
     
-    Parameters:
-    x (array-like): Feature values (e.g., shape 100x1)
-    y (array-like): Actual target values
-    y_pred (array-like): Predicted values from the model
-    title (str): Title of the plot
-    """
     # Ensure inputs are numpy arrays and flattened to 1D
     x = np.array(x).ravel()
     y = np.array(y).ravel()
